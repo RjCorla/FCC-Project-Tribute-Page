@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: gainsboro;
+}
+
+#main {
+  max-width: 1200px;
+  height: auto;
+  background: #fff;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  font-weight: 300;
+}
+
+/* HEADER */
+header {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+header #title-description {
+  font-size: small;
+}
+
+/* IMAGE DIV */
+#img-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+#img-div figure img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  display: block;
+}
+
+#img-div figure #img-caption {
+  font-size: smaller;
+  font-style: italic;
+  text-align: center;
+}
+
+/* MAIN */
+#tribute-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+#tribute-info #tribute-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 5px;
+  margin-bottom: 1rem;
+}
+
+#tribute-info #tribute-title {
+  margin-bottom: 1rem;
+}
+
+#tribute-info #tribute-subtitle {
+  font-size: smaller;
+}
+
+#tribute-info #main-article {
+  padding: 0 5rem;
+}
+
+#tribute-info #main-article p {
+  margin: 1.2rem 0;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  font-style: italic;
+  color: royalblue;
+}
+
+footer a:hover {
+  color: blue;
+}
+
+/* mobile */
+@media screen and (max-width: 480px) {
+  #tribute-info #tribute-title {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #tribute-info #main-article {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #tribute-info #main-article {
+    padding: 0 1rem;
+  }
+}
